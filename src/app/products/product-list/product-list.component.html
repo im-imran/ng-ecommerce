@@ -1,0 +1,19 @@
+<div class="list-group">
+    <button
+      type="button"
+      class="list-group-item list-group-item-action"
+      [ngClass]="{active: selectedCategory === 'All Categories'}"
+      (click)="onSelectCategory('All Categories')"
+    >
+      All Categories
+    </button>
+    <button
+      type="button"
+      class="list-group-item list-group-item-action"
+      *ngFor="let category of categories"
+      (click)="onSelectCategory(category)"
+      [ngClass]="{active: selectedCategory === category}"
+    >
+      {{ category }}
+    </button>
+  </div>

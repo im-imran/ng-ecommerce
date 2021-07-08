@@ -29,6 +29,9 @@ chrome-profiler-events*.json
 !.vscode/launch.json
 !.vscode/extensions.json
 .history/*
+.firebase/*
+.firebaserc
+firebase.json
 
 # misc
 /.sass-cache

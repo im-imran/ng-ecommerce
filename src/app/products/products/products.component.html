@@ -1,0 +1,47 @@
+<div class="container-fluid">
+  <div class="w-30 mb-3 mr-3" *ngFor="let productInfo of combinedProductInfo">
+    <div class="card">
+      <div class="embed-responsive embed-responsive-16by9">
+        <img
+          class="card-img-top embed-responsive-item"
+          [src]="productInfo.product.imageUrl"
+          [alt]="productInfo.product.name"
+        />
+      </div>
+      <div class="card-body">
+        <h5 class="card-title font-weight-bold">{{ productInfo.product.name }}</h5>
+        <p class="card-text">{{ productInfo.product.price | currency }}</p>
+      </div>
+      <div class="card-footer">
+        <a
+          class="btn btn-secondary"
+          *ngIf="productInfo.orderedQuantity === 0"
+          (click)="onAddtoCart(productInfo.product)"
+          >ADD TO CART</a
+        >
+        <div
+          class="d-flex flex-row justify-content-between align-items-center"
+          role="group"
+          aria-label="Basic example"
+          *ngIf="productInfo.orderedQuantity > 0"
+        >
+          <button
+            type="button"
+            class="btn btn-secondary btn-wide"
+            (click)="onDecrement(productInfo.product)"
+          >
+            -
+          </button>
+          <span>{{ productInfo.orderedQuantity }} in cart</span>
+          <button
+            type="button"
+            class="btn btn-secondary btn-wide"
+            (click)="onIncrement(productInfo.product)"
+          >
+            +
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

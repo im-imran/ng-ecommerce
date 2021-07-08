@@ -1,0 +1,43 @@
+.border-3 {
+    border-width:2px !important;
+}
+
+/* .list-group-item-action {
+    width: 70%;
+} */
+
+
+
+.w-30 {
+    width: 30%;
+    display: inline-block;
+}
+
+.embed-responsive .card-img-top {
+    object-fit: cover;
+    height: 30vh;
+}
+
+.list-group-item-action {
+    cursor: pointer;
+}
+
+.card-footer {
+    padding: 0;
+}
+
+.card-footer a {
+    width: 100%;
+}
+
+.btn-wide {
+    width: 15%;
+}
+
+img {
+    transition: 0.5s all ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.5); 
+}

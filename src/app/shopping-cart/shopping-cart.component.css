@@ -1,0 +1,19 @@
+td, th {
+    text-align: center;
+
+}
+
+.table-bordered td, .table-bordered th {
+    border-left: none;
+    border-right: none;
+}
+
+img.rounded-circle {
+    width: 8em;
+    height: 8em;
+    object-fit: cover;
+} 
+
+.table td, .table th {
+    vertical-align: middle;
+}

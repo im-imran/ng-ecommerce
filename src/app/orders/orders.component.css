@@ -1,0 +1,11 @@
+.list-group {
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+
+.list-group-horizontal {
+    justify-content: space-between;
+}
+
+.list-group-item {
+    border: none;
+}

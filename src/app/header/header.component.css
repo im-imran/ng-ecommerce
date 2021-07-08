@@ -1,0 +1,7 @@
+#navbarNavDropdown {
+    justify-content: flex-end;
+}
+
+a.nav-item {
+    color: gray;
+}
